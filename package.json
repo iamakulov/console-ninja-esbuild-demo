@@ -1,0 +1,16 @@
+{
+  "name": "esbuild-js-app",
+  "version": "1.0.0",
+  "description": "A JS app with three entrypoints (a.js, b.js, c.js) that uses esbuild to bundle them",
+  "main": "a.js",
+  "scripts": {
+    "build": "node esbuild/build.js"
+  },
+  "dependencies": {
+    "monaco-editor": "^0.39.0"
+  },
+  "devDependencies": {
+    "chalk": "^5.2.0",
+    "esbuild": "^0.18.5"
+  }
+}
