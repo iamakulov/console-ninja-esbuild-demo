@@ -4,13 +4,14 @@
   "description": "A JS app with three entrypoints (a.js, b.js, c.js) that uses esbuild to bundle them",
   "main": "a.js",
   "scripts": {
-    "build": "node esbuild/build.js"
+    "build": "node esbuild/build.js",
+    "serve": "serve ."
   },
   "dependencies": {
     "monaco-editor": "^0.39.0"
   },
   "devDependencies": {
-    "chalk": "^5.2.0",
-    "esbuild": "^0.18.5"
+    "esbuild": "^0.18.5",
+    "serve": "^14.2.0"
   }
 }

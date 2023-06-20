@@ -48,10 +48,10 @@ async function appBuild() {
   return context({
     ...commonConfig,
     entryPoints: appEntrypoints,
-    entryNames: `[name].[hash]`,
+    entryNames: `[name]`,
     metafile: true,
     logLevel: "info",
-    publicPath: "https://some-cdn.com/",
+    publicPath: "/build/",
     tsconfig: path.resolve(__dirname, "../tsconfig.json"),
     plugins: [appBuildPlugin],
   });
@@ -66,7 +66,7 @@ async function monacoBuild() {
       "monaco-editor/esm/vs/language/json/json.worker.js",
       "monaco-editor/esm/vs/language/html/html.worker.js",
     ],
-    entryNames: `[name]`,
+    entryNames: `[name].[hash]`,
     minify: true,
     format: "iife",
     splitting: false,
